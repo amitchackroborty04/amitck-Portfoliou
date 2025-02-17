@@ -65,7 +65,7 @@ const Hero = () => {
               Project
             </button>
           </div>
-          <div className="w-full h-[80px] md:h-[128px] dark:bg-[#181824] bg-[#FFFFFF] absolute bottom-0 left-0 ">
+          <div className="w-full h-[80px] md:h-[128px] dark:bg-[#181824] bg-[#FFFFFF] absolute bottom-0 left-0 overflow-x-hidden ">
             <div
               ref={marqueeRef}
               className="flex gap-4 min-w-max animate-marquee"

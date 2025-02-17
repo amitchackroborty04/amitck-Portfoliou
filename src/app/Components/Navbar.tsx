@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <header>
+    <header className='overflow-x-hidden'>
       <div className='relative '>
         <div className='container flex justify-between items-center bg-[#FFFFFF] dark:bg-[#181824] py-5 fixed z-50'>
           {/* Logo and mobile toggle */}
