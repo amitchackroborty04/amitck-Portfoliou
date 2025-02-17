@@ -1,7 +1,5 @@
 'use client'
-import Image from 'next/image'
 import React, { useState } from 'react'
-import logo from "@/../public/imge/logo.png"
 import { Darkbutton } from './DarkButton'
 
 const Navbar = () => {
@@ -13,8 +11,8 @@ const Navbar = () => {
 
   return (
     <header>
-      <div className='relative'>
-        <div className='container flex justify-between items-center bg-[#D9ECFF80] dark:bg-[#181824] py-5'>
+      <div className='relative '>
+        <div className='container flex justify-between items-center bg-[#FFFFFF] dark:bg-[#181824] py-5 fixed z-50'>
           {/* Logo and mobile toggle */}
           <div className='flex items-center justify-between w-full'>
             <div className='flex items-center'>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/app/Components/theme-provider";
+import ClientThemeProvider from "@/app/Components/ClientThemeProvider";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -11,30 +11,18 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Amit ck",
+  title: "Amit CK",
   description: "Amit CK - Frontend Developer Portfolio",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <>
-      <html lang="en" suppressHydrationWarning>
-        <head />
-        <body>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            {children}
-          </ThemeProvider>
-        </body>
-      </html>
-    </>
-  )
+    <html lang="en">
+      <body className={poppins.variable} suppressHydrationWarning>
+        <ClientThemeProvider>{children}</ClientThemeProvider>
+      </body>
+    </html>
+  );
 }
