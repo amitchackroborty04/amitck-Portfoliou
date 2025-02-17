@@ -2,8 +2,9 @@
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import Card from "./Card";
-import react from "@/../public/imge/react.png";
 import { motion } from "framer-motion";
+// import reacticon from "@/../public/imge/react.png"
+// import icon from "../../../public/imge/react.png"
 
 const Hero = () => {
   const marqueeRef = useRef<HTMLDivElement>(null);
@@ -69,12 +70,12 @@ const Hero = () => {
               ref={marqueeRef}
               className="flex gap-4 min-w-max animate-marquee"
             >
-              <Card title="html" src={react} />
-              <Card title="css" src={react} />
-              <Card title="bootstrap" src={react} />
-              <Card title="tailwind" src={react} />
-              <Card title="React" src={react} />
-              <Card title="nextjs" src={react} />
+              <Card title="html" src="/imge/react.png" />
+              <Card title="css" src="/imge/react.png" />
+              <Card title="bootstrap" src="/imge/react.png" />
+              <Card title="tailwind" src="/imge/react.png" />
+              <Card title="React" src="/imge/react.png" />
+              <Card title="nextjs" src="/imge/react.png"/>
             </div>
           </div>
         </div>
