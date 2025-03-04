@@ -1,14 +1,19 @@
 import React from 'react'
 import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
-import Aboutme from './Components/Aboutme'
+import Overveiw from './Components/Overveiw'
+import { MainSkill } from './Components/MainSkill'
+
+
+
 
 const page = () => {
   return (
     <div>
     <Navbar/>
     <Hero/>
-    <Aboutme/>
+    <Overveiw/>
+    <MainSkill/>
     </div>
   )
 }

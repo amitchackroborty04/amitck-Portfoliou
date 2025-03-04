@@ -143,7 +143,7 @@ export const SparklesText: React.FC<SparklesTextProps> = ({
         {sparkles.map((sparkle) => (
           <Sparkle key={sparkle.id} {...sparkle} />
         ))}
-        <strong>{text}</strong>
+        <i className="font-bold">{text}</i>
       </span>
     </div>
   );

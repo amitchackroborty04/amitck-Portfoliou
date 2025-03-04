@@ -13,27 +13,28 @@ const Navbar = () => {
   return (
     <header className="overflow-x-hidden">
       <div className="relative ">
-        <div className="container flex justify-between items-center bg-[#FFFFFF] dark:bg-[#181824] py-5 fixed z-50">
+        <div className="container flex justify-between items-center bg-[#FFFFFF] dark:bg-[#181824] py-5 fixed top-0 left-0 right-0 z-50">
           {/* Logo and mobile toggle */}
           <div className="flex items-center justify-between w-full">
-            <div className="flex items-center">
+            <div className="flex justify-start">
               <SparklesText
                 className="text-xl lg:text-[28px] text-[#1B2336] dark:text-[#7562E0] font-semibold"
-                text="Amit Chakraborty"
+                text="Amit"
               />
             </div>
 
             {/* Mobile hamburger button */}
-            <div className="md:hidden flex items-center gap-4">
+            <div className="md:hidden flex items-center gap-4 ">
+            <div>
+                <Darkbutton />
+              </div>
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="text-2xl text-black dark:text-white"
               >
                 {isMenuOpen ? "X" : "☰"}
               </button>
-              <div>
-                <Darkbutton />
-              </div>
+             
             </div>
           </div>
 
