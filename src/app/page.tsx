@@ -2,7 +2,11 @@ import React from 'react'
 import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
 import Overveiw from './Components/Overveiw'
-import { MainSkill } from './Components/MainSkill'
+import { IconCloudDemo } from './Components/MainSkill'
+import Portfolio from './Components/portfilou'
+import Reveiws from './Components/Reveiws'
+import Contact from './Components/Contact'
+
 
 
 
@@ -13,7 +17,10 @@ const page = () => {
     <Navbar/>
     <Hero/>
     <Overveiw/>
-    <MainSkill/>
+      <IconCloudDemo />
+      <Portfolio />
+      <Reveiws />
+      <Contact/>
     </div>
   )
 }

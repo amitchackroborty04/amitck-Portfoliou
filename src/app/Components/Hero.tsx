@@ -44,7 +44,7 @@ const Hero = () => {
           >
             Hello, I’m
           </motion.h1>
-          <FlipText className="!text-[25px] lg:!text-[52px] text-[#FFFFFF] font-semibold mt-2">
+          <FlipText className=" !text-[25px] lg:!text-[52px] text-[#FFFFFF] font-semibold mt-2">
             Amit Chakraborty
           </FlipText>
           <p className="text-[18px] text-[#FFFFFF] font-medium mt-2 w-full   lg:w-[435px]">
@@ -76,10 +76,10 @@ const Hero = () => {
 
         {/* Image container */}
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: 0 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.9, ease: "easeOut" }}
-          className="w-full lg:w-[50%] flex justify-center sm:w-full mt-5 lg:mt-0"
+          className="w-full lg:w-[50%] flex justify-center sm:w-full mt-5 lg:mt-0 "
         >
           <Image
             src="/imge/hero.png"
