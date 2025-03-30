@@ -2,6 +2,9 @@
 import React, { useState } from "react";
 import { Darkbutton } from "./DarkButton";
 import { SparklesText } from "@/components/magicui/sparkles-text";
+import logo from "@/../public/imge/sign.png"
+import logo2 from "@/../public//imge/amit.png"
+import Image from "next/image";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,10 +20,27 @@ const Navbar = () => {
           {/* Logo and mobile toggle */}
           <div className="flex items-center justify-between w-full">
             <div className="flex justify-start">
-              <SparklesText
+              {/* <SparklesText
                 className="text-xl lg:text-[28px] text-[#1B2336] dark:text-[#7562E0] font-semibold"
                 text="Amit"
+              /> */}
+              <Image
+                src={logo}
+                alt="logo"
+                width={200}
+                height={200}
+                className="dark:hidden"
               />
+
+              {/* Dark mode logo */}
+              <Image
+                src={logo2}
+                alt="logo"
+                width={200}
+                height={200}
+                className="hidden dark:block"
+              />
+              
             </div>
 
             {/* Mobile hamburger button */}

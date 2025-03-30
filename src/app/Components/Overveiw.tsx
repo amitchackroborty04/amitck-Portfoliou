@@ -17,7 +17,7 @@ const Overveiw = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-lg sm:text-xl md:text-2xl text-white font-medium mt-6 text-center md:text-left leading-relaxed"
+          className="text-lg sm:text-xl md:text-2xl text-white font-medium mt-6 text-center md:text-left leading-relaxed text-justify"
         >
           {/* <AuroraText> */}
           Hello, I&apos;m a passionate MERN Stack Developer. I specialize in
